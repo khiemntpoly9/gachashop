@@ -1,0 +1,337 @@
+<header class="header-p container-fluid px-0">
+	<div class="container-lg">
+		<div class="d-flex align-items-center justify-content-between evo-header-padding">
+			<!-- {/* Menu icon */} -->
+			<div class="d-inline-block d-lg-none col-2 col-md-2">
+				<div
+					class="btn border-none menu-icon"
+					data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasExample"
+					aria-controls="offcanvasExample"
+				>
+					<i class="fa-solid fa-bars"></i>
+				</div>
+			</div>
+			<!-- {/* Logo */} -->
+			<div class="header-logo col-4 col-md-4 mb-md-1 col-xl-2">
+				<div class="box-logo">
+					<a routerLink="/home">
+						<img class="img-fluid" src="assets/images/logo3.png" alt="" />
+					</a>
+				</div>
+			</div>
+			<!-- {/* Box tìm kiếm */} -->
+			<div class="d-none d-lg-block col-lg-4 col-xl-5 pt-lg-2 ms-lg-3 ms-xl-0">
+				<div class="header-search d-flex align-items-center p-1">
+					<input class="px-2 w-100" type="text" placeholder="Tìm sản phẩm ..." />
+					<div class="me-2 btn-s w-auto">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</div>
+				</div>
+			</div>
+			<!-- {/* Account */} -->
+			<div
+				class="header-account gap-2 gap-md-1 gap-lg-0 d-flex col-2 col-lg-5 col-xl-4 justify-content-evenly"
+			>
+				<!-- {/* Icon tìm kiếm MD */} -->
+				<div
+					class="btn-search d-flex d-lg-none text-end w-auto"
+					data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasSearch"
+					aria-controls="offcanvasSearch"
+				>
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</div>
+				<!-- {/* Box */} -->
+				<div class="box-account d-flex align-items-center gap-2 ms-lg-3 ms-xl-0">
+					<!-- {/* Yêu thích */} -->
+					<div class="d-none d-lg-block justify-content-center col-3 p-0 p-lg-2 w-auto">
+						<a class="text-black" routerLink="/favorite">
+							<div class="box-a d-flex justify-content-center position-relative">
+								<i class="fa-regular fa-heart w-auto"></i>
+								<span class="text-center">Yêu thích</span>
+								<div
+									class="i-count-box d-block position-absolute top-0 start-100 translate-middle d-flex justify-content-center align-items-center"
+								>
+									<div class="i-count">0</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- {/* Tài khoản */} -->
+					<div class="d-none d-lg-block col-3 p-0 p-lg-2 w-auto ms-lg-2 ms-xl-3">
+						<a class="text-black" routerLink="/account">
+							<div class="box-a w-auto d-flex">
+								<i class="fa-regular fa-user w-auto"></i>
+								<span>Tài khoản</span>
+							</div>
+						</a>
+					</div>
+					<!-- {/* Giỏ hàng */} -->
+					<div class="col-3 p-0 p-lg-2 w-auto">
+						<a
+							class="text-black"
+							routerLink="/"
+							data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvasCart"
+							aria-controls="offcanvasCart"
+						>
+							<div class="box-a d-flex justify-content-center position-relative">
+								<i class="fa-solid fa-cart-shopping w-auto"></i>
+								<span class="text-center d-none d-lg-block">Giỏ hàng</span>
+								<div
+									class="i-count-box d-block position-absolute top-0 start-100 translate-middle d-flex justify-content-center align-items-center"
+								>
+									<div class="i-count">0</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- {/* Navbar */} -->
+	<div class="navbar d-none d-lg-block p-0">
+		<div class="d-flex justify-content-center align-items-center p-0 m-0">
+			<ul class="d-flex container p-0 m-0">
+				<li>
+					<a class="text-center" routerLink="/"> Trang chủ </a>
+				</li>
+				<li>
+					<a class="text-center" routerLink="/gioithieu"> Giới thiệu </a>
+				</li>
+				<li>
+					<a class="text-center" routerLink="/products">
+						<span class="d-flex"> Sản phẩm <i class="fa-solid fa-chevron-down w-auto ms-1 pt-1"></i> </span>
+					</a>
+					<div class="mega-menu">
+						<div class="container-lg">
+							<div class="d-flex">
+								<div class="col-lg-9">
+									<!-- {/* Top */} -->
+									<div class="d-flex">
+										<div class="col-3 p-1">
+											<div class="">
+												<h6>
+													<a routerLink="/">Nội thất</a>
+												</h6>
+												<ul class="ul-list-item">
+													<li>
+														<a routerLink="/">Phòng khách</a>
+													</li>
+													<li>
+														<a routerLink="/">Phòng ăn</a>
+													</li>
+													<li>
+														<a routerLink="/">Phòng ngủ</a>
+													</li>
+													<li>
+														<a routerLink="/">Phòng làm việc</a>
+													</li>
+													<li>
+														<a routerLink="/">Phòng cho bé</a>
+													</li>
+													<li>
+														<a routerLink="/">Nội thất thông minh</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-3 p-1">
+											<div class="">
+												<h6>
+													<a routerLink="/">Đồ trang trí</a>
+												</h6>
+												<ul class="ul-list-item">
+													<li>
+														<a routerLink="/">Tranh & Khung ảnh</a>
+													</li>
+													<li>
+														<a routerLink="/">Lọ & Bình trang trí</a>
+													</li>
+													<li>
+														<a routerLink="/">Đồng hồ</a>
+													</li>
+													<li>
+														<a routerLink="/">Nến thơm & Đèn tinh dầu</a>
+													</li>
+													<li>
+														<a routerLink="/">Đồ dùng uống trà & Cafe</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-3 p-1">
+											<h6>
+												<a routerLink="/">Đèn</a>
+											</h6>
+											<ul class="ul-list-item">
+												<li>
+													<a routerLink="/">Đèn bàn</a>
+												</li>
+												<li>
+													<a routerLink="/">Đèn sàn</a>
+												</li>
+												<li>
+													<a routerLink="/">Đèn trần</a>
+												</li>
+												<li>
+													<a routerLink="/">Đèn treo tường</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-3 p-1">
+											<h6>
+												<a routerLink="/">Ngoại thất</a>
+											</h6>
+											<ul class="ul-list-item">
+												<li>
+													<a routerLink="/">Trang trí ngoài trời</a>
+												</li>
+												<li>
+													<a routerLink="/">Trang trí sân vườn</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- {/* Bottom */} -->
+									<div class="d-flex">
+										<div class="col-3 p-1">
+											<h6>
+												<a routerLink="/">Chăn, Ga, Gối & Nệm</a>
+											</h6>
+										</div>
+										<div class="col-3 p-1">
+											<h6>
+												<a routerLink="/">Đồ dùng nhà tắm</a>
+											</h6>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<img class="img-fluid" src="assets/images/mega-1-image.webp" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a class="text-center" routerLink="/"> Deal Hot </a>
+				</li>
+				<li>
+					<a class="text-center" routerLink="/"> Thương hiệu nổi bật </a>
+				</li>
+				<li>
+					<a class="text-center" routerLink="/"> Tin tức </a>
+				</li>
+				<li>
+					<a class="text-center" routerLink="/contact"> Liên hệ </a>
+				</li>
+				<li>
+					<a class="text-center" routerLink="/faq"> FAQ </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- {/* Offcanvas Menu */} -->
+	<div
+		class="offcanvas offcanvas-start"
+		tabIndex="-1"
+		id="offcanvasExample"
+		aria-labelledby="offcanvasExampleLabel"
+	>
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="offcanvasExampleLabel">Danh mục</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body p-0">
+			<div class="box-ul">
+				<ul class="list-group">
+					<a class="nav-link" routerLink="/home">
+						<li class="list-group-item-link px-3 link-active">Trang chủ</li>
+					</a>
+					<a class="nav-link" routerLink="/gioi-thieu">
+						<li class="list-group-item-link px-3">Giới thiệu</li>
+					</a>
+					<a class="nav-link" routerLink="/products">
+						<li class="list-group-item-link px-3">
+							<div class="d-flex justify-content-between">
+								<div>Sản phẩm</div>
+								<div>
+									<i class="fa-regular fa-plus"></i>
+								</div>
+							</div>
+						</li>
+					</a>
+					<a class="nav-link" routerLink="/">
+						<li class="list-group-item-link px-3">Deal hot</li>
+					</a>
+					<a class="nav-link" routerLink="/">
+						<li class="list-group-item-link px-3">Thương hiệu nổi bật</li>
+					</a>
+					<a class="nav-link" routerLink="/">
+						<li class="list-group-item-link px-3">Tin tức</li>
+					</a>
+					<a class="nav-link" routerLink="/">
+						<li class="list-group-item-link px-3">Liên hệ</li>
+					</a>
+					<a class="nav-link" routerLink="/">
+						<li class="list-group-item-link px-3">FAQ</li>
+					</a>
+					<a class="nav-link" routerLink="/">
+						<li class="list-group-item-link px-3">Đăng nhập</li>
+					</a>
+					<a class="nav-link" routerLink="/">
+						<li class="list-group-item-link px-3">Đăng ký</li>
+					</a>
+					<a class="nav-link" routerLink="/">
+						<li class="list-group-item-link px-3">
+							Sản phẩm yêu thích
+							<span class="ms-1">(0)</span>
+						</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- {/* Offcanvas Cart */} -->
+	<div class="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasCart" aria-labelledby="offcanvasCart">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="offcanvasCart">Giỏ hàng</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body p-0">
+			<div class="icon-store text-center">
+				<img class="w-50 opacity-50" src="assets/images/store.png" alt="" />
+			</div>
+			<div class="d-flex justify-content-center">
+				<div
+					type="button"
+					class="btn-cart w-50 d-flex align-items-center justify-content-center"
+					data-bs-dismiss="offcanvas"
+					aria-label="Close"
+				>
+					Tiếp tục mua sắm
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- {/* Offcanvas search */} -->
+	<div class="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasSearch" aria-labelledby="offcanvasSearch">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="offcanvasSearch">Tìm kiếm sản phẩm</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body p-0">
+			<div class="d-flex justify-content-center search-box">
+				<div class="container d-flex">
+					<input class="col-10" type="text" placeholder="Tìm sản phẩm ..." />
+					<div class="btn-search col-2 d-flex justify-content-center align-items-center p-2">
+						<i class="fa-solid fa-magnifying-glass text-center"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

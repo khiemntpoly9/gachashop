@@ -1,0 +1,86 @@
+<div class="login">
+	<div class="login-container container m-auto row">
+		<div class="left col">
+			<div class="account-policy-title">QUYỀN LỢI THÀNH VIÊN</div>
+			<div class="account-policy-content">
+				<p>Mua hàng khắp thế giới cực dễ dàng, nhanh chóng</p>
+				<p>Theo dõi chi tiết đơn hàng, địa chỉ thanh toán dễ dàng</p>
+				<p>Nhận nhiều chương trình ưu đãi hấp dẫn từ chúng tôi</p>
+			</div>
+		</div>
+		<div class="right col">
+			<ul class="auth-menu-list d-flex">
+				<li class="loginform">
+					<a routerLink="/login">Đăng nhập</a>
+				</li>
+				<li class="regisform active">
+					<a routerLink="/register">Đăng kí</a>
+				</li>
+			</ul>
+			<form method="post" id="customer-name" onSubmit="{handleSubmit}">
+				<div class="mb-3">
+					<label htmlFor="InputFName" class="form-label"> HỌ <span>*</span> </label>
+					<input type="text" class="form-control" id="InputFName" placeholder="Nhập Họ" />
+					<!-- {errors.firstname && <span>{errors.firstname}</span>} -->
+				</div>
+				<div class="mb-3">
+					<label htmlFor="InputName" class="form-label"> TÊN <span>*</span> </label>
+					<input type="text" class="form-control" id="InputName" placeholder="Nhập Tên" />
+					<!-- {errors.lastname && <span>{errors.lastname}</span>} -->
+				</div>
+				<div class="mb-3">
+					<label htmlFor="phone" class="form-label"> SỐ ĐIỆN THOẠI <span>*</span> </label>
+					<input type="tel" class="form-control" id="phone" placeholder="Nhập Số điện thoại" />
+				</div>
+				<div class="mb-3">
+					<label htmlFor="InputEmail" class="form-label"> Email <span>*</span> </label>
+					<input
+						type="email"
+						class="form-control"
+						id="InputEmail"
+						placeholder="Nhập Địa chỉ Email"
+						required
+						aria-describedby="emailHelp"
+						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"
+					/>
+					<!-- {errors.username && <span>{errors.username}</span>} -->
+				</div>
+				<div class="mb-3">
+					<label htmlFor="InputPassword" class="form-label"> Mật khẩu <span>*</span> </label>
+					<input
+						type="password"
+						class="form-control"
+						id="InputPassword"
+						placeholder="Nhập Mật khẩu"
+						required
+					/>
+					<!-- {errors.password && <span>{errors.password}</span>} -->
+				</div>
+
+				<button type="submit" class="btn">Tạo tài khoản</button>
+			</form>
+			<div class="line-break">
+				<span>hoặc đăng nhập qua</span>
+			</div>
+
+			<div class="social-login row row-cols-2 my-4">
+				<a href="" class="fb-login col">
+					<img
+						width="192px"
+						height="38px"
+						src="https://bizweb.dktcdn.net/assets/admin/images/login/fb-btn.svg"
+						alt="fb-login-button"
+					/>
+				</a>
+				<a href="" class="gg-login col">
+					<img
+						width="192px"
+						height="38px"
+						src="https://bizweb.dktcdn.net/assets/admin/images/login/gp-btn.svg"
+						alt="google-login-button	"
+					/>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

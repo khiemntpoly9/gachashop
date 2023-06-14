@@ -24,26 +24,8 @@
 						"tsConfig": "tsconfig.app.json",
 						"inlineStyleLanguage": "scss",
 						"assets": ["src/favicon.ico", "src/assets"],
-						"styles": [
-							"src/styles.scss",
-							"node_modules/bootstrap/dist/css/bootstrap.css",
-							"src/assets/css/animate.css",
-							"src/assets/plugins/select2/css/select2.min.css",
-							"src/assets/css/dataTables.bootstrap4.min.css",
-							"src/assets/plugins/fontawesome/css/fontawesome.min.css",
-							"src/assets/plugins/fontawesome/css/all.min.css",
-							"srs/assets/css/style.css"
-						],
-						"scripts": [
-							"node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-							"src/assets/js/jquery-3.6.0.min.js",
-							"src/assets/js/feather.min.js",
-							"src/assets/js/jquery.slimscroll.min.js",
-							"src/assets/js/plugins/select2/js/select2.min.js",
-							"src/assets/js/plugins/sweetalert/sweetalert2.all.min.js",
-							"src/assets/js/plugins/sweetalert/sweetalerts.min.js",
-							"src/assets/js/script.js"
-						]
+						"styles": ["src/styles.scss", "node_modules/bootstrap/dist/css/bootstrap.css"],
+						"scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
 					},
 					"configurations": {
 						"production": {
